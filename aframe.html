@@ -1,0 +1,26 @@
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/aframe/0.7.1/aframe.js"></script>
+<link rel="stylesheet" href="aframe.css" type= "text/css">
+<link href="https://fonts.googleapis.com/css?family=Francois+One|Lobster|Paytone+One|Sanchez|Shadows+Into+Light|Teko" rel="stylesheet">
+<title>Cheer Up-Cheerful VR</title>
+
+<script src="https://unpkg.com/aframe-text-geometry-component@0.5.1/dist/aframe-text-geometry-component.min.js"></script>
+<a-assets>
+<a-asset-item id="exoFont" src="https://cdn.glitch.com/c719c986-c0c5-48b8-967c-3cd8b8aa17f3%2Fexo2Black.typeface.json?1490305922150"></a-asset-item>
+</a-assets>
+<div id="exit"><a href="homepage.html">Exit</a></div>
+
+<a-scene>
+
+  <a-entity geometry = "primitive: torusKnot" scale = "2 2 2" position="0 0 -10" material=" color: #a9ddd6">
+  <a-animation easing="linear" attribute="rotation" dur="5000" to="0 0 360" repeat="indefinite"></a-animation></a-entity>
+  <a-entity geometry = "primitive: torusKnot" scale = "2 2 2" position="0 0 10" material=" color: #f19c79"><a-animation easing="linear" attribute="rotation" dur="5000" to="0 0 360" repeat="indefinite"></a-animation></a-entity>
+    <a-entity geometry = "primitive: torusKnot" scale = "2 2 2" rotation="0 90 0"position="10 0 0" material=" color: #f19c79"><a-animation easing="linear" attribute="rotation" dur="5000" to="0 0 360" repeat="indefinite"></a-animation></a-entity>
+  <a-entity geometry = "primitive: torusKnot" rotation="0 90 0" scale = "2 2 2" position="-10 0 0" material=" color: #a9ddd6"><a-animation easing="linear" attribute="rotation" dur="5000" to="0 0 360" repeat="indefinite"></a-animation></a-entity>                              
+  <a-entity geometry = "primitive: torusKnot" scale = "2 2 2" position="8 0 -8" material=" color: #dbfeb8"><a-animation easing="linear" attribute="rotation" dur="5000" to="0 0 360" repeat="indefinite"></a-animation></a-entity>
+  <a-entity geometry = "primitive: torusKnot" scale = "2 2 2" position="8 0 8" material=" color: #dbfeb8 "><a-animation easing="linear" attribute="rotation" dur="5000" to="0 0 360" repeat="indefinite"></a-animation></a-entity>
+    <a-entity geometry = "primitive: torusKnot" scale = "2 2 2" position="-8 0 8" material=" color: #d8bfaa"><a-animation easing="linear" attribute="rotation" dur="5000" to="0 0 360" repeat="indefinite"></a-animation></a-entity>
+  <a-entity geometry = "primitive: torusKnot" rotation="0 90 0" scale = "2 2 2" position="-8 0 -8" material=" color: #d8bfaa"><a-animation easing="linear" attribute="rotation" dur="5000" to="0 0 360" repeat="indefinite"></a-animation></a-entity>
+  <a-sky src="https://farm2.staticflickr.com/1807/42096333465_2c639112e7_k.jpg"></a-sky>
+  <a-entity geometry = "primitive: cone; radiusBottom: 1; radiusTop: 0.1" postition="0 -5 0" rotation="0 180 0"material="color: #beb7df"><a-animation easing="linear" attribute="rotation" dur="5000" to="0 0 360" repeat="indefinite"></a-animation></a-entity>
+  </a-scene>
+  <script type="text/javascript" src="aframe.js"></script>

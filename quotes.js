@@ -1,0 +1,35 @@
+let iQuotes = [`"The Way Get Started Is To Quit Talking And Begin Doing." - Walt Disney`, `"The Pessimist Sees Difficulty In Every Opportunity. The Optimist Sees Opportunity In Every Difficulty." - Winston Churchill`, `"Don't Let Yesterday Take Up Too Much Of Today." - Will Rogers`, `"You Learn More From Failure Than From Success. Don't Let It Stop You. Failure Builds Character." - Unknown`, `"It's Not Whether You Get Knocked Down, It's Whether You Get Up." - Vince Lombardi`, `"If You Are Working On Something That You Really Care About, You Don't Have To Be Pushed. The Vision Pulls You." - Steve Jobs`, `"People Who Are Crazy Enough To Think They Can Change The World, Are The Ones Who Do." - Rob Siltanen`, `"Failure Will Never Overtake Me If My Determination To Succeed Is Strong Enough." - Og Mandino`, `"We May Encounter Many Defeats But We Must Not Be Defeated." - Maya Angelou`, `"Knowing Is Not Enough; We Must Apply. Wishing Is Not Enough; We Must Do." - Johann Wolfgang Von Goethe`, `"Imagine Your Life Is Perfect In Every Respect; What Would It Look Like?" - Brian Tracy`, `"We Generate Fears While We Sit. We Overcome Them By Action." - Dr. Henry Link`, `"Whether You Think You Can Or Think You Can't, You're Right." - Henry Ford`, `"Security Is Mostly A Superstition. Life Is Either A Daring Adventure Or Nothing." - Helen Keller`, `"The Man Who Has Confidence In Himself Gains The Confidence Of Others." - Hasidic Proverb`, `"The Only Limit To Our Realization Of Tomorrow Will Be Our Doubts Of Today." - Franklin D. Roosevelt`, `"Creativity Is Intelligence Having Fun." - Albert Einstein`, `"What You Lack In Talent Can Be Made Up With Desire, Hustle And Giving 110% All The Time." - Don Zimmer`, `"Do What You Can With All You Have, Wherever You Are." - Theodore Roosevelt`, `"Develop An 'Attitude Of Gratitude'. Say Thank You To Everyone You Meet For Everything They Do For You." - Brian Tracy`, `"You Are Never Too Old To Set Another Goal Or To Dream A New Dream." - C.S. Lewis`, `"To See What Is Right And Not Do It Is A Lack Of Courage." - Confucious`, `"Reading Is To The Mind, As Exercise Is To The Body." - Brian Tracy`, `"Fake It Until You Make It! Act As If You Had All The Confidence You Require Until It Becomes Your Reality." - Brian Tracy`, `"The Future Belongs To The Competent. Get Good, Get Better, Be The Best!" - Brian Tracy`, `"For Every Reason It's Not Possible, There Are Hundreds Of People Who Have Faced The Same Circumstances And Succeeded." - Jack Canfield`, `"Things Work Out Best For Those Who Make The Best Of How Things Work Out." - John Wooden`, `"I Think Goals Should Never Be Easy, They Should Force You To Work, Even If They Are Uncomfortable At The Time." - Michael Phelps`, `"One Of The Lessons That I Grew Up With Was To Always Stay True To Yourself And Never Let What Somebody Else Says Distract You From Your Goals." - Michelle Obama`, `"Today's Accomplishments Were Yesterday's Impossibilities." - Robert H. Schuller`, `"The Only Way To Do Great Work Is To Love What You Do. If You Haven't Found It Yet, Keep Looking. Don't Settle." - Steve Jobs`, `"You Don't Have To Be Great To Start, But You Have To Start To Be Great." - Zig Ziglar`, `"A Clear Vision, Backed By Definite Plans, Gives You A Tremendous Feeling Of Confidence And Personal Power." - Brian Tracy`, `"There Are No Limits To What You Can Accomplish, Except The Limits You Place On Your Own Thinking." - Brian Tracy`];
+let sQuotes = [`"Organized persons are too lazy to look for things."`, `"Never let your friends feel lonely...disturb them all the time."`, `"I don't need a hair stylist, my pillow gives me a new hairstyle every morning."`, `"Common sense is like deodorant. The people who need it most never use it."`, `"I started the week with a big box of patience. The box is empty now."`, `"Follow your heart but take your brain with you."`, `"Cleaning is putting stuff in less obvious places."`, `"A compromise is an agreement whereby both parties get what neither of them wanted."`, `"If you are too open minded your brain will fall out."`, `"When life gives you lemons, make lemonade."`, `"Always remember these two words that will open every door in your life...push and pull."`, `"Knock knock who's there? A broken pencil. A broken pencil who? Never mind it's pointless."`, `"They keep saying the right person will come along...i think mine got hit by a truck."`, `"I can only please one person a day. Today isn't your day. Tomorrow doesn't look good either."`, `"I'm not old, I'm youthfully challenged."`, `"If at first you don't succeed call it version 1.0."`, `"I'm not arrogant, I'm just better than you."`, `"I know I don't look busy, I did it right the first time."`, `"I used to have a handle on life but it broke off."`, `"Sometimes I listen to the stranger's conversation and mentally give my opinion."`, `"Sometimes the wrong choices bring us to the right places."`, `"I love finding money in my clothes. It's like a gift to me from me."`, `"Why can't the house clean itself? It seems to get dirty by itself."`, `"My dad has the most awesome girl in the world."`, `"Some cause happiness wherever they go; others whenever they go."`, `"If you don't understand my silence how will you understand my words?"`, `"A good neighbor is one that does not put a password on their wi-fi."`, `"Experience is the name everyone gives to their mistakes."`, `"I'm not arguing, I'm just explaining why I'm right."`, `"If being awesome was a crime, I would be serving a life sentence."`, `"Better days are coming. They are called saturday and sunday."`, `"Be sure you taste your words before you spit them out."`, `"Old people at weddings always poke me and say you're next so I started doing the same thing to them at funerals."`, `"I am responsible for what I say but I'm not responsible for what you understand."`, `"No matter how smart you are, you can never convince someone stupid that they are stupid."`, `"Why can't mosquitos suck fat instead of blood?"`, `"I'm not special, I'm just limited edition."`, `"Some people are like clouds. When they go away it's a brighter day."`, `"Light travels faster than sound. This is why some people"`]
+
+function submitAnswer() {
+ var radios = document.getElementsByName("choice");
+ var i = 0, len = radios.length;
+ var checked = false;
+ var userAnswer;
+ 
+ for( ; i < len; i++ ) {
+    if(radios[i].checked) {
+      checked = true;
+      userAnswer = radios[i].value;
+    }
+ }
+ // if user click submit button without selecting any option, alert box should be say "please select choice answer".
+ if(!checked) {
+   alert("please select choice answer");
+   return;
+ }
+ // Silly answer
+ if(userAnswer === "Silly") {
+    // genterate random silly quote
+   let m = Math.random()*sQuotes.length;
+   m = Math.floor(m);
+   document.getElementById('display').innerHTML = sQuotes[m]
+ }
+ // inspirational answer
+ else if (userAnswer === "Inspirational") {
+    // generate random inspirational quote
+   let m = Math.random()*iQuotes.length;
+   m = Math.floor(m);
+   document.getElementById('display').innerHTML = iQuotes[m]
+ }
+}

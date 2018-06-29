@@ -1,0 +1,165 @@
+h1 {
+    color: purple;
+    font-family: Lobster;
+    font-size: 110px;
+    margin-bottom:  0;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: pink;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: auto;
+    padding-right: auto;
+    width: 100%;
+    position: fixed;
+}
+
+li {
+    float: right;
+    display: inline;
+    font-family: "Paytone One";
+    font-size: 25px;
+    height: 10vh;
+    line-height: 10vh;
+    padding-bottom: 0;
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    height: 10vh;
+    line-height: 10vh;
+    padding-bottom: 0;
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+li a:hover {
+
+    background-color: #c2eabd;
+}
+h2 {
+    font-family: "Francois One";
+    font-size: 100px;
+    background-image: url("https://lh3.googleusercontent.com/8KeUnQzjsYCCekTT2cAxySqQT0OgZbGdPT9pNcti_DwUuAbkBQqD12zDYoCmbhdmFi-VgWt2URg4ovrUjPlZFWNC7HiJyexFWmUYQ8ozaZapZ_XZvol8uJglGYEXrU88Zbx06QRjEcuLXzzwau2p17p-pj8nVfzEO5CwtBQqsxBhdrv2VvBhT0A1YFUQ8UuWNucuAsUeYrjsXdEnzdd6CP-GojoJGpfEfnsPkx6w_2pqrwIbNNyhrxMht1MK-RV63qpCO9CISOvjnhBYN3DSosngkCJI3q59S1e3rSuUkkTR3J3cOZaIktQiGZgvrIv8bokQzj1tu_iOxn6A6QWMlzA438P2NvwAkFqBY_T2sXky-R12GAaqUbl_7dcNitVrzg76iN_8NaKizb84HahT-m0_F50jsmJx8rwyNZtY05N9dQTYmySbmE7J8pWzUeMRsR50iCI7MaRmdYjmX-xBhtnA7Y1pT7f9GyX1ha5JThMQ8HjMBznus_izpF7GqfT6mURr0i7Eji-3EdocSSabLm4RQv8hagcdyi-NQiqkd1IDCBHUULo2ejpTOrtOsXxLLHTwoRddg0w4F91Ey3XWU59Bs_d4HHFKBXV46ZDjblXjaK0STi8saQWytaJNYoCT-Sea5n24CCFx-Hf3w0xSZmKh9jxzVIFMfA=w2880-h1384-no");
+    background-attachment: fixed;
+    width: 100%;
+    height: 80vh;
+    margin-top: 0;
+    color: white;
+    text-shadow: 0.05em 0.05em black;
+    margin-bottom: 0;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    line-height: 80vh;
+    animation: zoom 3s ease;
+}
+img{
+    animation: zoomImg 3s ease;
+    width: 7%;
+}
+.third {
+    width: 33.33%;
+    height: 300px;
+    font-family: "Francois One";
+    vertical-align: top;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-right: 1em;
+    padding-left: 1em;
+    margin-top: 3em;
+
+}
+html{
+    background: linear-gradient(to right, white, pink, white);
+
+}
+.third img{
+    width: 50%;
+    animation: zoomImg1 4s ease;
+}
+table {
+    margin-top: 1em;
+
+}
+button{
+    font-family: sanchez;
+    font-weight: bold;
+    background-color: white;
+    padding: 0.5em 0.5em;
+    width: 50%;
+    border-radius: 0.5em;
+    font-size: 15px;
+}
+button a{
+    text-decoration: none;
+    text-decoration: none;
+    color: black;
+}
+h4{
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    margin-top: 0;
+}
+#exquote{
+    padding: 1em 1em;
+    margin: 0.5em 1em;
+    margin-top: 0;
+    border: double;
+    font-size: 1.25em;
+    width: 50%;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+.resources {
+    text-align: center;
+    margin-top: 0;
+    padding: 1em 1em;
+    font-family: "Shadows Into Light";
+    font-size: 25px;
+}
+.sources {
+    font-family: "Shadows Into Light";
+    font-size: 20px;
+}
+h5 {
+    font-size: 18px;
+    font-family: "Francois One";
+}
+.bod {
+    background: linear-gradient(to right, white, pink, white);
+
+}
+h3{
+    font-family: Sanchez;
+    font-size: 1em;
+}
+#map{
+    display: none;
+}
+@keyframes zoom{
+    0% {font-size: 1px}
+    100% {font-size: 100px}
+}
+@keyframes zoomImg{
+    0% {width:0%}
+    100%{width: 7%}
+}
+@keyframes zoomImg1{
+    0% {width:50%}
+    100%{width: 50%}
+}

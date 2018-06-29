@@ -1,0 +1,42 @@
+h1 {
+    color: purple;
+    font-family: Lobster;
+    font-size: 110px;
+    margin-bottom:  0;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: pink;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: auto;
+    padding-right: auto;
+    width: 100%;
+}
+
+li {
+    float: right;
+    display: inline;
+    font-family: "Paytone One";
+    font-size: 25px;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: #92efa4;
+}
+iframe{
+    display: none;
+}
