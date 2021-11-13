@@ -1,61 +1,64 @@
-<head>
-	<title>Cheer Up-Home Page</title>
-<link href="https://fonts.googleapis.com/css?family=Francois+One|Lobster|Paytone+One|Sanchez|Shadows+Into+Light|Teko" rel="stylesheet">
-<link rel="stylesheet" href="homepage.css" type= "text/css">
-</head>
-<body>
-<header>
-	<ul>
-	    <li><a href = "homepage.html">Home</a></li>
-	    <li><a href="quotes.html">Quotes</a></li>
-	    <li><a href = "songs.html">Songs</a></li>
-	    <li><a href = "images.html">Images</a></li>
-	    <li><a href = "aframe.html">Cheerful VR</a></li>
-	    <li><a href = "aboutus.html">About us</a></li>
-	</ul>
-</header>
-<div class = "bod">
-	<h2><center><img src = "https://media.giphy.com/media/xlM0VeGGe9ShdtrXg2/giphy.gif" width = "90vw">     CHEER UP     <img src = "https://media.giphy.com/media/xlM0VeGGe9ShdtrXg2/giphy.gif" width = "90vw"></center></h2>
-	<div class = "buttons">
-	    <table>
-	    <tr>
-	    <th class = "third">
-	    	<h4>Quotes</h4>
-	    	<img src ="https://image.freepik.com/free-vector/vintage-style-motivational-quote-background_23-2147574716.jpg"/>
-	    	 <h5>Travel into a land of quotes where you can choose between silly and inspirational.</h5>
-	    	<button><a href = "quotes.html">Click Here To Find Quotes !</a></button></th>
-	    <th class = "third">
-	    	<h4>Songs</h4>
-	    	<img src="https://i.pinimg.com/originals/bb/20/6f/bb206f4c1147baa856eb1ab5d9578a5f.jpg"/>
-	    	<h5>Allow your self to be cheered up while listening to these happy jams.</h5>
-	    	<button><a href = "songs.html">Click Here To Find Songs !</a></button></th>
-	    <th class = "third">
-	    	<h4>Images</h4>
-	    	<img src="http://quotesnhumor.com/wp-content/uploads/2014/10/Best-Funny-pics-of-the-day-humor.jpg"/>
-	    	<h5>Discover funny images that will keep you laughing and happy throughout the day.</h5>
-	    	<button><a href = "images.html">Click Here To Find Images !</a></button></th>
-	    </tr>
-	    </table>
-	</div>
-	  <div>
-  	<center><h5>Parks are also a great place to relax, meditate, hike, and refesh.</h5></center>
-   <center><button onclick="getLocation()">Find a park near me</button></center>
-   <h5><center>Wait a few seconds after clicking.</center></h5><br>
-   <center><iframe id="map" src="" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></center>
-  </div>
-	<div class= "resources">
-	  <h4>Other Resources</h4>
-    <div class = "sources">
-     	<h4>Help Lines</h4>
-	   	<h3>Suicide Prevention National Hoteline: (800) 273-825</h3>
-	   	<h3>Domestic Violence Hotline: (800) 799-7233</h3>
- 	  </div>
-  </div>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>Cheer Up-Home Page</title>
+		<link href="https://fonts.googleapis.com/css?family=Francois+One|Lobster|Paytone+One|Sanchez|Shadows+Into+Light|Teko" rel="stylesheet">
+		<link rel="stylesheet" href="homepage.css" type= "text/css">
+	</head>
+	<body>
+		<header>
+			<ul>
+				<li><a href = "homepage.html">Home</a></li>
+				<li><a href= "quotes.html">Quotes</a></li>
+				<li><a href = "songs.html">Songs</a></li>
+				<li><a href = "images.html">Images</a></li>
+				<li><a href = "aframe.html">Cheerful VR</a></li>
+				<li><a href = "aboutus.html">About us</a></li>
+			</ul>
+		</header>
+		<div class = "bod">
+			<h2><center><img src = "https://media.giphy.com/media/xlM0VeGGe9ShdtrXg2/giphy.gif" width = "90vw">     CHEER UP     <img src = "https://media.giphy.com/media/xlM0VeGGe9ShdtrXg2/giphy.gif" width = "90vw"></center></h2>
+			<div class = "buttons">
+				<table>
+					<tr>
+						<th class = "third">
+							<h4>Quotes</h4>
+							<img src ="https://image.freepik.com/free-vector/vintage-style-motivational-quote-background_23-2147574716.jpg"/>
+							<h5>Travel into a land of quotes where you can choose between silly and inspirational.</h5>
+							<button><a href = "quotes.html">Click Here To Find Quotes !</a></button></th>
+						<th class = "third">
+							<h4>Songs</h4>
+							<img src="https://i.pinimg.com/originals/bb/20/6f/bb206f4c1147baa856eb1ab5d9578a5f.jpg"/>
+							<h5>Allow your self to be cheered up while listening to these happy jams.</h5>
+							<button><a href = "songs.html">Click Here To Find Songs !</a></button></th>
+						<th class = "third">
+							<h4>Images</h4>
+							<img src="http://quotesnhumor.com/wp-content/uploads/2014/10/Best-Funny-pics-of-the-day-humor.jpg"/>
+							<h5>Discover funny images that will keep you laughing and happy throughout the day.</h5>
+							<button><a href = "images.html">Click Here To Find Images !</a></button></th>
+					</tr>
+				</table>
+			</div>
+			<div>
+				<center><h5>Parks are also a great place to relax, meditate, hike, and refesh.</h5></center>
+				<center><button onclick="getLocation()">Find a park near me</button></center>
+				<h5><center>Wait a few seconds after clicking.</center></h5><br>
+				<center><iframe id="map" src="" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></center>
+			</div>
+			<div class= "resources">
+				<h4>Other Resources</h4>
+				<div class = "sources">
+					<h4>Help Lines</h4>
+					<h3>Suicide Prevention National Hoteline: (800) 273-825</h3>
+					<h3>Domestic Violence Hotline: (800) 799-7233</h3>
+				</div>
+			</div>
 
-
-  <div class = "credit">
-  	<h3>Made by Carbon Copy</h3>
-  </div>
-</div>
-<script type="text/javascript" src="homepage.js"></script>
-</body>
+			<div class = "credit">
+				<h3>Made by Carbon Copy</h3>
+			</div>
+		</div>
+		<script type="text/javascript" src="homepage.js"></script>
+	</body>
+</html>
